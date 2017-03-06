@@ -1,0 +1,18 @@
+//
+//  AMUIStylistExamplePrefix.pch
+//  AMUIStylistExample
+//
+//  Created by Alex Malkoff on 05.03.17.
+//  Copyright © 2017 cpthooch. All rights reserved.
+//
+
+#ifndef AMUIStylistExamplePrefix_pch
+#define AMUIStylistExamplePrefix_pch
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <Underscore.h>
+#import <extobjc.h>
+#import "UIView+AMUIStyle.h"
+
+#endif /* AMUIStylistExamplePrefix_pch */

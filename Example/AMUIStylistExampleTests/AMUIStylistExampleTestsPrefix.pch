@@ -1,0 +1,20 @@
+//
+//  AMUIStylistExampleTestsPrefix.pch
+//  AMUIStylistExample
+//
+//  Created by Alex Malkoff on 05.03.17.
+//  Copyright © 2017 cpthooch. All rights reserved.
+//
+
+#ifndef AMUIStylistExampleTestsPrefix_pch
+#define AMUIStylistExampleTestsPrefix_pch
+
+#import <Specta/Specta.h>
+#import <Expecta/Expecta.h>
+#import <OCMockito/OCMockito.h>
+#import <OCHamcrest/OCHamcrest.h>
+
+#import <Underscore.m/Underscore.h>
+#import <libextobjc/extobjc.h>
+
+#endif /* AMUIStylistExampleTestsPrefix_pch */
