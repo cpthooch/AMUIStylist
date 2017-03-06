@@ -3,7 +3,7 @@ Declarative styling facilities for UIKit components.
 
 ## Capabilities
 
-1. Declarative way of styling UI elements. 
+### Declarative way of styling UI elements. 
 Forget about:
 ```objc
 someButton.backgroundColor = kGreenColor;
@@ -13,7 +13,7 @@ Use semantic style names:
 someButton.am_style = @"awesome-action-button";
 ```
 
-2. Single style assignment instead of a bunch of settings, e.g. above example effectively appears:
+### Single style assignment instead of a bunch of settings, e.g. above example effectively appears:
 ```objc
 [someButton setBackgroundColor:[UIColor greenColor]];
 [someButton setTitleColor:[UIColor darkTextColor] forState:UIControlStateNormal];
@@ -21,37 +21,39 @@ someButton.am_style = @"awesome-action-button";
 ...
 ```
 
-3. Single style may be applied to several objects:
+### Single style may be applied to several objects:
 ```objc
 someButton.am_style = @"awesome-action-button";
 otherButton.am_style = @"awesome-action-button";
 loginButton.am_style = @"awesome-action-button";
 ```
 
-4. Singe object may have several styles, applied consequently:
+### Singe object may have several styles, applied consequently:
 ```objc
 someButton.am_style = @"large-text, awesome-action-button";
 ```
 
-5. ```am_style``` is KVC compliant property so it could be set directly in Interface Builder:
+### ```am_style``` is KVC compliant property so it could be set directly in Interface Builder:
+![style_ib](https://cloud.githubusercontent.com/assets/1440284/23611694/68fc9fa4-0289-11e7-8852-23835073d14b.png)
 
-6. Style definitions support code completion:
+### Style definitions support code completion:
 ```objc
 UITextField *inputFieldStyle = style(UITextField.self);
 [inputFieldStyle setTextColor:UIColor.darkTextColor];
 [inputFieldStyle setFont:[self lightFontWithSize:21]];
 ```
 
-7. Styles support inheritance:
+### Styles support inheritance:
 ```objc
 UITextField *passwordFieldStyle = style(UITextField.self, inputFieldStyle);
 [passwordFieldStyle setSecureTextEntry:YES];
 ```
 
-8. Styles organized into style sheets which support hot switching on the fly:
+### Styles organized into style sheets which support hot switching on the fly:
 ```objc
 [AMUIStylist sharedStylist].styleSheet = [AMUIStyleSheet getSheet:@"swag"];
 ```
+![preview](https://cloud.githubusercontent.com/assets/1440284/23611732/8ff33a82-0289-11e7-90c7-5a692d02e4e7.gif)
 
 For more examples please take a look at included demo app.
 
