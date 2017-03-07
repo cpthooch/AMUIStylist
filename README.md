@@ -13,7 +13,7 @@ Use semantic style names
 someButton.am_style = @"awesome-action-button";
 ```
 
-### Single style assignment instead of a bunch of settings, e.g. above example effectively is
+### Single style assignment instead of a bunch of settings, e.g. above example may effectively become
 ```objc
 [someButton setBackgroundColor:[UIColor greenColor]];
 [someButton setTitleColor:[UIColor darkTextColor] forState:UIControlStateNormal];
@@ -42,15 +42,15 @@ NSMutableDictionary *dullDictStyle = style(NSMutableDictionary.self);
 [dullDictStyle setObject:@YES forKey:@"Am I dull?"];
 ```
 
+### Style definitions support code completion
+![completion](https://cloud.githubusercontent.com/assets/1440284/23615306/057f4540-0297-11e7-97e6-4c150bf36fd7.png)
+
 ### Styles support inheritance
 This will produce combined style from inputFieldStyle settings plus ```setSecureTextEntry```
 ```objc
 UITextField *passwordFieldStyle = style(UITextField.self, inputFieldStyle);
 [passwordFieldStyle setSecureTextEntry:YES];
 ```
-
-### Style definitions support code completion
-![completion](https://cloud.githubusercontent.com/assets/1440284/23615306/057f4540-0297-11e7-97e6-4c150bf36fd7.png)
 
 ### Styles organized into style sheets which support hot switching
 ```objc
