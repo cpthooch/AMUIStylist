@@ -36,8 +36,11 @@ someButton.am_style = @"large-text, awesome-action-button";
 ### am_style is KVC compliant property so it can be set directly via Interface Builder
 ![style_ib](https://cloud.githubusercontent.com/assets/1440284/23611694/68fc9fa4-0289-11e7-8852-23835073d14b.png)
 
-### Style definitions support code completion
-![completion](https://cloud.githubusercontent.com/assets/1440284/23615306/057f4540-0297-11e7-97e6-4c150bf36fd7.png)
+### Styling can be applied to nearly every Cocoa object
+```objc
+NSMutableDictionary *dullDictStyle = style(NSMutableDictionary.self);
+[dullDictStyle setObject:@YES forKey:@"Am I dull?"];
+```
 
 ### Styles support inheritance
 This will produce combined style from inputFieldStyle settings plus ```setSecureTextEntry```
@@ -45,6 +48,9 @@ This will produce combined style from inputFieldStyle settings plus ```setSecure
 UITextField *passwordFieldStyle = style(UITextField.self, inputFieldStyle);
 [passwordFieldStyle setSecureTextEntry:YES];
 ```
+
+### Style definitions support code completion
+![completion](https://cloud.githubusercontent.com/assets/1440284/23615306/057f4540-0297-11e7-97e6-4c150bf36fd7.png)
 
 ### Styles organized into style sheets which support hot switching
 ```objc
