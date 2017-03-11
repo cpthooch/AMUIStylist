@@ -1,5 +1,5 @@
 # AMUIStylist
-Declarative styling facilities for UIKit components.
+Native declarative styling facilities for UIKit components. AMUIStylis styles are essentially collections of selector invocations recorded over special proxy object, and easily applicable to any other compatible UIKit (actually Cocoa) object.
 
 ## Capabilities
 
