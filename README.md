@@ -13,7 +13,7 @@ Use semantic style names
 someButton.am_style = @"awesome-action-button";
 ```
 
-### Single style assignment instead of a bunch of settings, e.g. above example may effectively become
+### Single style assignment instead of a bunch of settings, e.g. above example may effectively equal to
 ```objc
 [someButton setBackgroundColor:[UIColor greenColor]];
 [someButton setTitleColor:[UIColor darkTextColor] forState:UIControlStateNormal];
